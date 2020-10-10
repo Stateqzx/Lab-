@@ -1,26 +1,29 @@
 #include <stdio.h>
 
-int power (int number, int power);
+int get_power(int number, int power);
 
 int main()
 {
-  int i;
-  int m;
+  int power_of_number;
+  int number;
   printf("Enter number: ");
-  scanf("%d",&number);
+  scanf("%d", &number);
   printf("Enter degree: ");
-  scanf("%d",&i);
-  printf("%d %d\n", i, power(number, i));
+  scanf("%d", &power_of_number);
+  printf("%d %d\n", power_of_number, power(number, power_of_number));
+
   return 0;
 }
-int power (int x, int power)
+int get_power(int number, int power)
 {
   int i;
-  int y;
-  y=1;
+  int result;
+  result = 1;
   for (i = 1; i <= power; ++i)
   {
-  y=y*x;
+    result = result * number;
   }
-return y;
+  
+  return result;
+  
 }
