@@ -7,6 +7,7 @@ int is_simple(int number)
    if (number < 2)
    {
       printf("Wrong Number");
+      
       return 2;
    }
    for (int i = 2; i < number; i++)
