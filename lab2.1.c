@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 long long get_fibbonachi_via_cycle(int number);
- int main()
-{
-  int num;
-  printf ("Enter Fibonacci number: ");
-  scanf ("%d",&num);
-  printf("%lld\t",get_fibbonachi_via_cycle(num+1));
-}
+  int main()
+  {
+    int number;
+    printf ("Enter Fibbonachi Number : ");
+    scanf ("%d", &number);
+    printf("%llu\t", get_fibbonachi_via_cycle(number + 1));
+  }
 
 long long get_fibbonachi_via_cycle(int number)
 {
@@ -18,6 +18,6 @@ long long get_fibbonachi_via_cycle(int number)
     fib += fib_sum;
     fib_sum = fib - fib_sum;
   }
-
+  
   return fib_sum;
 }
