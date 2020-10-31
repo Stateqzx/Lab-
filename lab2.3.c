@@ -36,7 +36,6 @@ char int_to_char(int number)
 void power(int number, int source, int target)
 {
     int result_in_ten = 0;
-    int line_lengt = sizeof(number) / sizeof(int);
     char result[30];
 
     for (int q = 0; q < 30; q++)
