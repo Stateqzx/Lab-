@@ -7,7 +7,7 @@ void power(int, int, int);
 int main()
 {
     int number = 150, source = 8, target = 10;
-    if (target > 36 || source > 10)
+    if (target > 31 || source > 10)
     {
         printf("Error");
     }
